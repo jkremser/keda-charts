@@ -1,0 +1,17 @@
+watchNamespace: default
+rbac:
+  enabledCustomScaledRefKinds: true
+  scaledRefKinds:
+   - apiGroup: argoproj.io
+     kind: Rollout
+   - apiGroup: cluster.x-k8s.io
+     kind: MachineDeployment
+   - apiGroup: cluster.x-k8s.io
+     kind: MachinePool
+
+permissions:
+  operator:
+    restrict:
+      namesAllowList:
+       - secretPassword
+       - someApiKey

@@ -1,0 +1,15 @@
+crds:
+  install: true
+image:
+  keda:
+    repository: docker.io/jkremser/keda
+    tag: latest
+  webhooks:
+    repository: docker.io/jkremser/keda-admission-webhooks
+    tag: latest
+
+logging:
+  operator:
+    level: debug
+    format: json
+    stackTracesEnabled: true

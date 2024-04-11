@@ -1,0 +1,10 @@
+rbac:
+  enabledCustomScaledRefKinds: true
+watchNamespace: default,keda,production
+permissions:
+  operator:
+    restrict:
+      namesAllowList:
+       - foo
+       - bar
+       - baz

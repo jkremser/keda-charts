@@ -1,0 +1,7 @@
+watchNamespace: "" # all namespaces -> cluster-wide rights
+enabledCustomScaledRefKinds: false
+permissions:
+  operator:
+    restrict:
+      namesAllowList:
+       - bar
